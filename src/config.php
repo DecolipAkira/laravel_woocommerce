@@ -1,9 +1,9 @@
 <?php
 
 return [
-    "url"               => env('WOOCOMMERCE_URL'),
-    "consumer_key"      => env('WOOCOMMERCE_CONSUMER_KEY'),
-    "consumer_secret"   => env('WOOCOMMERCE_CONSUMER_SECRET'),
+    "url"               => env('WOOCOMMERCE_URL', null),
+    "consumer_key"      => env('WOOCOMMERCE_CONSUMER_KEY', null),
+    "consumer_secret"   => env('WOOCOMMERCE_CONSUMER_SECRET', null),
     "options"           => [
         'wp_api'            => env('WOOCOMMERCE_WP_API', null),
         'wp_api_prefix'     => env('WOOCOMMERCE_WP_API_PREFIX', null),
