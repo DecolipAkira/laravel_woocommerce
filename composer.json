@@ -23,7 +23,7 @@
                 "DecolipAkira\\WooCommerce\\WooCommerceServiceProvider"
             ],
             "aliases": {
-                "WooCommerce": "DecolipAkira\\Facades\\WooCommerce"
+                "WooCommerce": "DecolipAkira\\WooCommerce\\Facades\\WooCommerce"
             }
         }
     }
