@@ -25,12 +25,12 @@ Adicione a _Facade_ em `config/app.php`:
     ...
 ]
 ```
-## Terceira etapa: Publicando configurações
+### Terceira etapa: Publicando configurações
 Execute o comando a seguir para publicar as configurações da biblioteca:
 ```bash
 $ php artisan vendor:publish --provider="DecolipAkira\WooCommerce\WooCommerceServiceProvider"
 ```
-## Quarta etapa: Adicionando _Environment Variables_
+### Quarta etapa: Adicionando _Environment Variables_
 Adicione as seguintes variáveis no arquivo `.env` de acordo com suas necessidades:
 
 | Variavel | Valor Padrão | Descrição |
@@ -47,38 +47,38 @@ Adicione as seguintes variáveis no arquivo `.env` de acordo com suas necessidad
 | WOOCOMMERCE\_OAUTH\_TIMESTAMP | `time()` | `OAuth TimeStamp` personalizado |
 | WOOCOMMERCE\_USER\_AGENT | `WooCommerce API Client-PHP` | `User-Agent` personalizado |
 
-# Utilizando...
+## Utilizando...
 Não esqueça de utilizar o namespace:
 ```php
 use WooCommerce;
 ```
 
-## GET
+### GET
 ```php
 WooCommerce::get($endpoint, $parameters = []);
 ```
 
-## POST
+### POST
 ```php
 WooCommerce::post($endpoint, $data);
 ```
 
-## PUT
+### PUT
 ```php
 WooCommerce::put($endpoint, $data);
 ```
 
-## DELETE
+### DELETE
 ```php
 WooCommerce::delete($endpoint, $parameters = []);
 ```
 
-## OPTIONS
+### OPTIONS
 ```php
 WooCommerce::options($endpoint);
 ```
 
-# Exemplo de uso...
+## Exemplo de uso...
 Listando pedidos:
 ```php
 use WooCommerce;
@@ -92,10 +92,10 @@ $pedidos = WooCommerce::get('orders', [
 ```
 
 
-# Mais exemplos...
+## Mais exemplos...
 
 Para mais exemplos consulte a [Documentação da API REST do WooCommerce](https://woocommerce.github.io/woocommerce-rest-api-docs).
 
 
-# Licença
+## Licença
 Licença MIT(MIT License). Por favor verifique o [arquivo de licença](LICENSE.md) para mais detalhes.
