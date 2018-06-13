@@ -19,7 +19,12 @@ class WooCommerceServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->singleton('woocommerce', function ($app) {
-            return new Client(config('woocommerce'));
+            return new Client(
+                config('woocommerce')["url"],
+                config('woocommerce')["consumer_key"],
+                config('woocommerce')["consumer_secret"],
+                config('woocommerce')["options"]
+            );
         });
     }
 
