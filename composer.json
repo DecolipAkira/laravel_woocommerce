@@ -1,0 +1,20 @@
+{
+    "name": "decolipakira/laravel_woocommerce",
+    "type": "library",
+    "require": {
+        "php": "^7.0",
+        "automattic/woocommerce": "2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "DecolipAkira\\WooCommerce\\": "src"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Decolip Akira",
+            "email": "decolip2@gmail.com"
+        }
+    ]
+}
