@@ -1,5 +1,6 @@
 {
     "name": "decolipakira/laravel_woocommerce",
+    "description": "Esta é uma biblioteca para facilitar a integração com a API do WooCommerce utilizando o framework Laravel.",
     "type": "library",
     "require": {
         "php": "^7.0",
