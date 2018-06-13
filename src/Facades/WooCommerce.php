@@ -1,6 +1,6 @@
 <?php
 
-namespace DecolipAkira\Facades;
+namespace DecolipAkira\WooCommerce\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

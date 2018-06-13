@@ -1,6 +1,6 @@
 <?php
 
-namespace DecolipAkira;
+namespace DecolipAkira\WooCommerce;
 
 use Illuminate\Support\ServiceProvider;
 use Automattic\WooCommerce\Client;
