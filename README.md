@@ -32,8 +32,9 @@ $ php artisan vendor:publish --provider="DecolipAkira\WooCommerce\WooCommerceSer
 ```
 ## Quarta etapa: Adicionando _Environment Variables_
 Adicione as seguintes variáveis no arquivo `.env` de acordo com suas necessidades:
+
 | Variavel | Valor Padrão | Descrição |
-| :--- | :---: | ---: |
+| :--- | :---: | :--- |
 | WOOCOMMERCE\_URL | `null` | URL da sua Loja. exemplo: https://loja.clubegreens.com |
 | WOOCOMMERCE\_CONSUMER\_KEY | `null` | Consumer Key da sua API do WooCommerce |
 | WOOCOMMERCE\_CONSUMER\_SECRET | `null` | Consumer Secret da sua API do WooCommerce |
