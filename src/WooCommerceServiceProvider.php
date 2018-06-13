@@ -5,7 +5,7 @@ namespace DecolipAkira;
 use Illuminate\Support\ServiceProvider;
 use Automattic\WooCommerce\Client;
 
-class WooCommerceProvider extends ServiceProvider
+class WooCommerceServiceProvider extends ServiceProvider
 {
     protected $defer = true;
 
