@@ -79,7 +79,7 @@ WooCommerce::options($endpoint);
 ```
 
 ## Exemplo de uso...
-Listando pedidos:
+Buscando pedidos:
 ```php
 use WooCommerce;
 
