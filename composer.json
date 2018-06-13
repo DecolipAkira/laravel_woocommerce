@@ -16,5 +16,15 @@
             "name": "Decolip Akira",
             "email": "decolip2@gmail.com"
         }
-    ]
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DecolipAkira\\WooCommerce\\WooCommerceServiceProvider"
+            ],
+            "aliases": {
+                "WooCommerce": "DecolipAkira\\Facades\\WooCommerce"
+            }
+        }
+    }
 }
