@@ -82,13 +82,23 @@ WooCommerce::options($endpoint);
 Buscando pedidos:
 ```php
 use WooCommerce;
+ 
+// Array of response results.
+$results = $woocommerce->get('orders');
 
-$pedidos = WooCommerce::get('orders', [
-    'page'      => 3,
-    'per_page'  => 20,
-    'order'     => 'id',
-    'orderby'   => 'desc'
-]);
+// Last request data.
+$lastRequest = WooCommerce::httpGetRequest();
+$lastRequest->getUrl(); // Requested URL (string).
+$lastRequest->getMethod(); // Request method (string).
+$lastRequest->getParameters(); // Request parameters (array).
+$lastRequest->getHeaders(); // Request headers (array).
+$lastRequest->getBody(); // Request body (JSON).
+
+// Last response data.
+$lastResponse = WooCommerce::httpGetResponse();
+$lastResponse->getCode(); // Response code (int).
+$lastResponse->getHeaders(); // Response headers (array).
+$lastResponse->getBody(); // Response body (JSON).
 ```
 
 

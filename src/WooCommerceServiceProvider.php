@@ -18,7 +18,7 @@ class WooCommerceServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->app->singleton('woocommerce', function ($app) {
+        $this->app->singleton('automattic.woocommerce', function ($app) {
             return new Client(
                 config('woocommerce')["url"],
                 config('woocommerce')["consumer_key"],
@@ -26,10 +26,14 @@ class WooCommerceServiceProvider extends ServiceProvider
                 config('woocommerce')["options"]
             );
         });
+
+        $this->app->singleton('woocommerce', function ($app) {
+            return new WooCommerceClient($this->app['automattic.woocommerce']);
+        });
     }
 
     public function provides()
     {
-        return ['woocommerce'];
+        return 'woocommerce';
     }
 }
