@@ -34,6 +34,6 @@ class WooCommerceServiceProvider extends ServiceProvider
 
     public function provides()
     {
-        return 'woocommerce';
+        return ['woocommerce'];
     }
 }
